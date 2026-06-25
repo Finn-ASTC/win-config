@@ -81,3 +81,8 @@
 
 - 聚焦窗口：100%（不透明）
 - 非聚焦窗口：85%
+
+## 我的部分配置参考和改自
+
+- <https://github.com/swopnil7/Windots>
+- <https://github.com/end-4/dots-hyprland>
