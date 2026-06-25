@@ -43,6 +43,8 @@
 - `windows-11-start-menu-styler` — 开始菜单样式
 - `windows-11-taskbar-styler` — 任务栏样式
 
+配置文件复制到名字对应从mod的高级设置的mod设置里面即可
+
 ## 可选软件
 
 | 工具 | 用途 |
@@ -63,8 +65,6 @@
 | `glazewm/` | `C:\Users\<用户名>\.glzr\glazewm\` |
 | `zebar/` | `C:\Users\<用户名>\.glzr\zebar\` |
 | `tacky-borders/` | `C:\Users\<用户名>\.config\tacky-borders\` |
-| `windhawk/userprofile.json` | `C:\ProgramData\Windhawk\` |
-| `windhawk/icon-resource-redirect/` | `C:\ProgramData\Windhawk\Engine\ModsWritable\mod-storage\icon-resource-redirect\` |
 | `yasb/` | `C:\Users\<用户名>\.config\yasb\` |
 | `wezterm/wezterm.lua` | `C:\Users\<用户名>\.config\wezterm\wezterm.lua` |
 | `starship/starship.toml` | `C:\Users\<用户名>\.config\starship.toml` |
