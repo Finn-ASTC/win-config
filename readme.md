@@ -9,7 +9,6 @@
 | 工具 | 用途 | 安装方式 |
 |------|------|----------|
 | **GlazeWM** | 平铺窗口管理器 | `scoop install glazewm` 或 [GitHub](https://github.com/glzr-io/glazewm) |
-| **Zebar** | GlazeWM 配套状态栏 | `scoop install zebar` 或 [GitHub](https://github.com/glzr-io/zebar) |
 | **YASB** | 顶部信息栏 (workspace/天气/硬件/系统托盘) | [GitHub](https://github.com/amnweb/yasb) |
 | **tacky-borders** | 窗口边框美化 (粉色渐变+阴影+发光) | `scoop install tacky-borders` |
 | **Windhawk** | 系统 UI 模组 (任务栏/开始菜单/图标主题等) | [windhawk.net](https://windhawk.net) |
@@ -63,7 +62,6 @@
 | 本目录 | 还原到 |
 |--------|--------|
 | `glazewm/` | `C:\Users\<用户名>\.glzr\glazewm\` |
-| `zebar/` | `C:\Users\<用户名>\.glzr\zebar\` |
 | `tacky-borders/` | `C:\Users\<用户名>\.config\tacky-borders\` |
 | `yasb/` | `C:\Users\<用户名>\.config\yasb\` |
 | `wezterm/wezterm.lua` | `C:\Users\<用户名>\.config\wezterm\wezterm.lua` |
