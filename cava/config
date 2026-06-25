@@ -1,0 +1,17 @@
+[general]
+framerate = 120
+bars = 0
+bar_width = 2
+autosens = 1
+
+[output]
+method = noncurses
+channels = stereo
+
+[color]
+gradient = 1
+gradient_color_1 = '#FF65DE'
+gradient_color_2 = '#3831FF'
+
+[smoothing]
+noise_reduction = 60

@@ -1,0 +1,205 @@
+[
+  {
+    "title": "Godot_v4.5",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Godot_v4.5.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\godot_v45_1771423715464.png",
+    "type": "app",
+    "id": 1771423715466
+  },
+  {
+    "title": "Blender 4.5",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Blender\\Blender 4.5.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\blender_45_1771423730459.png",
+    "type": "app",
+    "id": 1771423730460
+  },
+  {
+    "title": "Houdini 21.0.440",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Side Effects Software\\Houdini 21.0.440.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\houdini_210440_1771424263584.png",
+    "type": "app",
+    "id": 1771424263585
+  },
+  {
+    "title": "fSpy",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\fSpy.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\fspy_1771423858870.png",
+    "type": "app",
+    "id": 1771423858871
+  },
+  {
+    "title": "Pixelorama",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Pixelorama.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\pixelorama_1771423820803.png",
+    "type": "app",
+    "id": 1771423820804
+  },
+  {
+    "title": "PixiEditor",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\PixiEditor.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\pixieditor_1771423843228.png",
+    "type": "app",
+    "id": 1771423843228
+  },
+  {
+    "title": "PureRef",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\PureRef\\PureRef.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\pureref_1771424313701.png",
+    "type": "app",
+    "id": 1771424313702
+  },
+  {
+    "title": "Visual Studio Code",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\visual_studio_code_1771423757612.png",
+    "type": "app",
+    "id": 1771423757614
+  },
+  {
+    "title": "WezTerm",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\WezTerm.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\wezterm_1771423984805.png",
+    "type": "app",
+    "id": 1771423984806
+  },
+  {
+    "title": "Obsidian",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Obsidian.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\obsidian_1771423774069.png",
+    "type": "app",
+    "id": 1771423774070
+  },
+  {
+    "title": "elonaplus_lts",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\elonaplus_lts.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\elonaplus_lts_1771423834760.png",
+    "type": "app",
+    "id": 1771423834761
+  },
+  {
+    "title": "Steam",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steam.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\steam_1771423874876.png",
+    "type": "app",
+    "id": 1771423874877
+  },
+  {
+    "title": "osu!(lazer)",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\osu!(lazer).lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\osulazer_1771423891571.png",
+    "type": "app",
+    "id": 1771423891572
+  },
+  {
+    "title": "Zen",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Zen.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\zen_1771424141725.png",
+    "type": "app",
+    "id": 1771424141726
+  },
+  {
+    "title": "Google Chrome",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Google Chrome.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\google_chrome_1771423903068.png",
+    "type": "app",
+    "id": 1771423903068
+  },
+  {
+    "title": "Firefox",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Firefox.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\firefox_1771423910613.png",
+    "type": "app",
+    "id": 1771423910613
+  },
+  {
+    "title": "Vivaldi",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Vivaldi.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\vivaldi_1771423919155.png",
+    "type": "app",
+    "id": 1771423919156
+  },
+  {
+    "title": "GlazeWM",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\GlazeWM.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\glazewm_1771423927300.png",
+    "type": "app",
+    "id": 1771423927301
+  },
+  {
+    "title": "YASB",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\YASB.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\yasb_1771423934670.png",
+    "type": "app",
+    "id": 1771423934670
+  },
+  {
+    "title": "yasb_themes",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\yasb_themes.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\yasb_themes_1771423945479.png",
+    "type": "app",
+    "id": 1771423945479
+  },
+  {
+    "title": "Jelly",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Jelly\\Jelly.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\jelly_1771431549782.png",
+    "type": "app",
+    "id": 1771431549783
+  },
+  {
+    "title": "网易云音乐",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\网易云音乐.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\网易云音乐_1771424330691.png",
+    "type": "app",
+    "id": 1771424330692
+  },
+  {
+    "title": "YouTube Music Desktop App",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\NovusTheory\\YouTube Music Desktop App.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\youtube_music_desktop_app_1771652696190.png",
+    "type": "app",
+    "id": 1771652696191
+  },
+  {
+    "title": "Spotify",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Spotify.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\spotify_1771424338235.png",
+    "type": "app",
+    "id": 1771424338235
+  },
+  {
+    "title": "手写文字生成网站",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Chrome 应用\\手写文字生成网站.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\手写文字生成网站_1771424345834.png",
+    "type": "app",
+    "id": 1771424345835
+  },
+  {
+    "title": "百度网盘",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\百度网盘\\百度网盘.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\百度网盘_1771424352083.png",
+    "type": "app",
+    "id": 1771424352086
+  },
+  {
+    "title": "夸克网盘",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\夸克网盘.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\夸克网盘_1771424357114.png",
+    "type": "app",
+    "id": 1771424357115
+  },
+  {
+    "title": "环境变量",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\环境变量.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\环境变量_1771429077407.jpg",
+    "type": "app",
+    "id": 1771429064337
+  },
+  {
+    "title": "Shimeji-ee",
+    "path": "C:\\Users\\Finn\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Shimeji-ee.lnk",
+    "icon": "C:\\Users\\Finn\\.config\\yasb\\launchpad\\icons\\shimeji-ee_1773494530017.png",
+    "type": "app",
+    "id": 1773494530019
+  }
+]

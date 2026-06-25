@@ -1,0 +1,18 @@
+{
+    "theme": "TintedGlass",
+    "disableNewStartMenuLayout": "forceNewLayout",
+    "controlStyles[0].target": "Border#AcrylicBorder",
+    "controlStyles[0].styles[0]": "Background:=<SolidColorBrush Color=\"#221F2C\"/>",
+    "controlStyles[0].styles[1]": "BorderBrush:=<SolidColorBrush Color=\"#FF9CF0\" Opacity=\"0.8\"/>",
+    "controlStyles[0].styles[2]": "BorderThickness=2",
+    "controlStyles[1].target": "StartDocked.SearchBoxToggleButton",
+    "controlStyles[1].styles[0]": "Background=#1C1725",
+    "controlStyles[1].styles[1]": "BorderThickness=0",
+    "webContentStyles[0].target": "",
+    "webContentStyles[0].styles[0]": "",
+    "webContentCustomJs": "",
+    "styleConstants[0]": "",
+    "resourceVariables[0].variableKey": "",
+    "resourceVariables[0].value": "",
+    "themeResourceVariables[0]": ""
+}

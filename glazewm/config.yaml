@@ -1,0 +1,279 @@
+general:
+  focus_follows_cursor: false
+  toggle_workspace_on_refocus: true
+  cursor_jump:
+    enabled: true
+    trigger: "monitor_focus"
+  hide_method: "cloak"
+  show_all_in_taskbar: false
+
+# ---- 间隙 ----
+gaps:
+  scale_with_dpi: true
+  inner_gap: "14px"
+  outer_gap:
+    top: "14px"
+    right: "16px"
+    bottom: "14px"
+    left: "16px"
+
+# ---- 窗口视觉效果 ----
+window_effects:
+  focused_window:
+    border:
+      enabled: false
+      color: "#a115ff"
+    hide_title_bar:
+      enabled: true
+    corner_style:
+      enabled: false
+      style: "rounded"
+    # 聚焦窗口 100% 不透明
+    transparency:
+      enabled: false
+
+  other_windows:
+    border:
+      enabled: false
+      color: "#7a5c49"
+    hide_title_bar:
+      enabled: true
+    corner_style:
+      enabled: true
+      style: "rounded"
+    # 非聚焦窗口 85% 不透明
+    transparency:
+      enabled: true
+      opacity: "85%"
+
+# ---- 窗口行为 ----
+window_behavior:
+  initial_state: "tiling"
+  state_defaults:
+    floating:
+      centered: true
+      shown_on_top: false
+    fullscreen:
+      maximized: false
+      shown_on_top: false
+
+# ---- 9 个工作区 ----
+workspaces:
+  - name: "1"
+  - name: "2"
+  - name: "3"
+  - name: "4"
+  - name: "5"
+  - name: "6"
+  - name: "7"
+  - name: "8"
+  - name: "9"
+
+# ---- 忽略规则 (不被 GlazeWM 管理的窗口) ----
+window_rules:
+  - commands: ["ignore"]
+    match:
+      # 系统 & 状态栏
+      - window_process: { equals: "zebar" }
+      # 画中画
+      - window_title: { regex: "[Pp]icture.in.[Pp]icture" }
+        window_class: { regex: "Chrome_WidgetWin_1|MozillaDialogClass" }
+      # PowerToys
+      - window_process: { equals: "PowerToys" }
+        window_class: { regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]' }
+      - window_process: { equals: "PowerToys" }
+        window_title: { regex: ".*? - Peek" }
+      # Office 辅助窗口
+      - window_process: { equals: "EXCEL" }
+        window_class: { not_regex: "XLMAIN" }
+      - window_process: { equals: "WINWORD" }
+        window_class: { not_regex: "OpusApp" }
+      - window_process: { equals: "POWERPNT" }
+        window_class: { not_regex: "PPTFrameClass" }
+      # 火绒安全
+      - window_process: { equals: "HipsLog" }
+      - window_process: { equals: "HipsTray" }
+      - window_process: { equals: "HRHelper" }
+      - window_process: { equals: "HipsMain" }
+      - window_process: { equals: "ARPProtection" }
+      - window_process: { equals: "Autoruns" }
+      - window_process: { equals: "BugReport" }
+      - window_process: { equals: "CrashDump" }
+      - window_process: { equals: "DB5Upgrade" }
+      - window_process: { equals: "DHCPDetection" }
+      - window_process: { equals: "FileShred" }
+      - window_process: { equals: "HipsDaemon" }
+      - window_process: { equals: "HRUpdate" }
+      - window_process: { equals: "leakrepair" }
+      - window_process: { equals: "NetDiag" }
+      - window_process: { equals: "NetFlow" }
+      - window_process: { equals: "PopBlock" }
+      - window_process: { equals: "RightClickMan" }
+      - window_process: { equals: "SecTask" }
+      - window_process: { equals: "sysclean" }
+      - window_process: { equals: "SysDiag" }
+      - window_process: { equals: "TrafficProt" }
+      - window_process: { equals: "wsctrl" }
+      - window_process: { equals: "wsctrlsvc" }
+      - window_process: { equals: "SecAnalysis" }
+      # 桌面宠物 & 壁纸
+      - window_process: { equals: "Lively" }
+        window_class: { regex: "HwndWrapper" }
+      - window_process: { equals: "BongoCat" }
+      - window_process: { equals: "VPet-Simulator.Windows" }
+      - window_process: { equals: "VPet.Solution" }
+      - window_process: { equals: "DeskPawsRelease" }
+      # 工具
+      - window_process: { equals: "Clash for Windows" }
+      - window_process: { equals: "MouseInc" }
+      - window_process: { equals: "PixPin" }
+      - window_process: { equals: "MechvibesPlusPlus" }
+      - window_process: { equals: "PureRef" }
+      - window_process: { equals: "Everything" }
+      # 游戏
+      - window_process: { equals: "Terraria" }
+      - window_process: { equals: "elonaplus_lts" }
+      - window_process: { equals: "饥荒" }
+      - window_process: { equals: "饥荒联机版" }
+      - window_process: { equals: "Plain Craft Launcher 2" }
+      # 社交
+      - window_process: { equals: "QQ" }
+      - window_process: { equals: "Weixin" }
+      # 其他
+      - window_process: { equals: "createdump" }
+      - window_process: { equals: "YourMom" }
+      - window_process: { equals: "YourWife" }
+      - window_process: { equals: "tile-map-editor-test" }
+      - window_process: { equals: "Jelly" }
+      - window_process: { equals: "jelly_tests" }
+      - window_process: { equals: "main" }
+      - window_process: { equals: "AcrylicAnim" }
+      - window_process: { equals: "WindowFollower" }
+
+# ---- 调整大小模式 ----
+binding_modes:
+  - name: "resize"
+    keybindings:
+      - commands: ["resize --width -1%"]
+        bindings: ["h", "left"]
+      - commands: ["resize --width +1%"]
+        bindings: ["l", "right"]
+      - commands: ["resize --height +1%"]
+        bindings: ["k", "up"]
+      - commands: ["resize --height -1%"]
+        bindings: ["j", "down"]
+      - commands: ["wm-disable-binding-mode --name resize"]
+        bindings: ["escape", "enter"]
+
+# ---- 键位绑定 ----
+keybindings:
+  # 焦点移动
+  - commands: ["focus --direction left"]
+    bindings: ["alt+h", "alt+left"]
+  - commands: ["focus --direction right"]
+    bindings: ["alt+l", "alt+right"]
+  - commands: ["focus --direction up"]
+    bindings: ["alt+k", "alt+up"]
+  - commands: ["focus --direction down"]
+    bindings: ["alt+j", "alt+down"]
+  # 窗口移动
+  - commands: ["move --direction left"]
+    bindings: ["alt+shift+h", "alt+shift+left"]
+  - commands: ["move --direction right"]
+    bindings: ["alt+shift+l", "alt+shift+right"]
+  - commands: ["move --direction up"]
+    bindings: ["alt+shift+k", "alt+shift+up"]
+  - commands: ["move --direction down"]
+    bindings: ["alt+shift+j", "alt+shift+down"]
+  # 调整大小
+  - commands: ["resize --width -1%"]
+    bindings: ["alt+u"]
+  - commands: ["resize --width +1%"]
+    bindings: ["alt+p"]
+  - commands: ["resize --height +1%"]
+    bindings: ["alt+o"]
+  - commands: ["resize --height -1%"]
+    bindings: ["alt+i"]
+  - commands: ["wm-enable-binding-mode --name resize"]
+    bindings: ["alt+r"]
+  # 窗口状态
+  - commands: ["wm-toggle-pause"]
+    bindings: ["alt+shift+p"]
+  - commands: ["toggle-tiling-direction"]
+    bindings: ["alt+v"]
+  - commands: ["wm-cycle-focus"]
+    bindings: ["alt+space"]
+  - commands: ["toggle-floating --centered"]
+    bindings: ["alt+shift+space"]
+  - commands: ["toggle-tiling"]
+    bindings: ["alt+t"]
+  - commands: ["toggle-fullscreen"]
+    bindings: ["alt+f"]
+  - commands: ["toggle-minimized"]
+    bindings: ["alt+m"]
+  - commands: ["close"]
+    bindings: ["alt+shift+q"]
+  # 系统
+  - commands: ["wm-exit"]
+    bindings: ["alt+shift+e"]
+  - commands: ["wm-reload-config"]
+    bindings: ["alt+shift+r"]
+  - commands: ["wm-redraw"]
+    bindings: ["alt+shift+w"]
+  # 启动终端
+  - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
+    bindings: ["alt+enter"]
+  # 工作区导航
+  - commands: ["focus --next-active-workspace"]
+    bindings: ["alt+s"]
+  - commands: ["focus --prev-active-workspace"]
+    bindings: ["alt+a"]
+  - commands: ["focus --recent-workspace"]
+    bindings: ["alt+d"]
+  # 工作区切换 Alt+1~9
+  - commands: ["focus --workspace 1"]
+    bindings: ["alt+1"]
+  - commands: ["focus --workspace 2"]
+    bindings: ["alt+2"]
+  - commands: ["focus --workspace 3"]
+    bindings: ["alt+3"]
+  - commands: ["focus --workspace 4"]
+    bindings: ["alt+4"]
+  - commands: ["focus --workspace 5"]
+    bindings: ["alt+5"]
+  - commands: ["focus --workspace 6"]
+    bindings: ["alt+6"]
+  - commands: ["focus --workspace 7"]
+    bindings: ["alt+7"]
+  - commands: ["focus --workspace 8"]
+    bindings: ["alt+8"]
+  - commands: ["focus --workspace 9"]
+    bindings: ["alt+9"]
+  # 多显示器: 工作区移动
+  - commands: ["move-workspace --direction left"]
+    bindings: ["alt+shift+a"]
+  - commands: ["move-workspace --direction right"]
+    bindings: ["alt+shift+f"]
+  - commands: ["move-workspace --direction up"]
+    bindings: ["alt+shift+d"]
+  - commands: ["move-workspace --direction down"]
+    bindings: ["alt+shift+s"]
+  # 窗口移到工作区 Alt+Shift+1~9
+  - commands: ["move --workspace 1", "focus --workspace 1"]
+    bindings: ["alt+shift+1"]
+  - commands: ["move --workspace 2", "focus --workspace 2"]
+    bindings: ["alt+shift+2"]
+  - commands: ["move --workspace 3", "focus --workspace 3"]
+    bindings: ["alt+shift+3"]
+  - commands: ["move --workspace 4", "focus --workspace 4"]
+    bindings: ["alt+shift+4"]
+  - commands: ["move --workspace 5", "focus --workspace 5"]
+    bindings: ["alt+shift+5"]
+  - commands: ["move --workspace 6", "focus --workspace 6"]
+    bindings: ["alt+shift+6"]
+  - commands: ["move --workspace 7", "focus --workspace 7"]
+    bindings: ["alt+shift+7"]
+  - commands: ["move --workspace 8", "focus --workspace 8"]
+    bindings: ["alt+shift+8"]
+  - commands: ["move --workspace 9", "focus --workspace 9"]
+    bindings: ["alt+shift+9"]

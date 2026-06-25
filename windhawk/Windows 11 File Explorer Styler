@@ -1,0 +1,11 @@
+{
+    "theme": "Matter",
+    "backgroundTranslucentEffect": "mica",
+    "backgroundTranslucentEffectRegion": "entireWindow",
+    "controlStyles[0].target": "",
+    "controlStyles[0].styles[0]": "",
+    "styleConstants[0]": "",
+    "themeResourceVariables[0]": "",
+    "explorerFrameContainerHeight": 0,
+    "xamlDiagnosticsHandling": "alert"
+}
