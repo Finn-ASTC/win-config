@@ -16,6 +16,7 @@
 | **Starship** | Shell 提示符美化 | `scoop install starship` |
 | **fastfetch** | 系统信息展示 | `scoop install fastfetch` |
 | **CAVA** | 音频可视化 (YASB 内嵌) | `scoop install cava` |
+| **Flow Launcher** | 快速启动器 | [flowlauncher.com](https://www.flowlauncher.com) |
 
 ## 字体
 
@@ -68,6 +69,7 @@
 | `starship/starship.toml` | `C:\Users\<用户名>\.config\starship.toml` |
 | `cava/config` | `C:\Users\<用户名>\.config\cava\config` |
 | `fastfetch/` | `C:\Users\<用户名>\.config\fastfetch\` |
+| `flowlauncher/Themes/Synthwave Theme.xaml` | `C:\Users\<用户名>\AppData\Roaming\FlowLauncher\Themes\` |
 
 ## 需要手动调整的路径
 
