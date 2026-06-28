@@ -74,81 +74,72 @@ window_rules:
   - commands: ["ignore"]
     match:
       # 系统 & 状态栏
-      - window_process: { equals: "zebar" }
+      - window_process: {equals: "zebar"}
       # 画中画
-      - window_title: { regex: "[Pp]icture.in.[Pp]icture" }
-        window_class: { regex: "Chrome_WidgetWin_1|MozillaDialogClass" }
+      - window_title: {regex: "[Pp]icture.in.[Pp]icture"}
+        window_class: {regex: "Chrome_WidgetWin_1|MozillaDialogClass"}
       # PowerToys
-      - window_process: { equals: "PowerToys" }
-        window_class: { regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]' }
-      - window_process: { equals: "PowerToys" }
-        window_title: { regex: ".*? - Peek" }
+      - window_process: {equals: "PowerToys"}
+        window_class: {regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]'}
+      - window_process: {equals: "PowerToys"}
+        window_title: {regex: ".*? - Peek"}
       # Office 辅助窗口
-      - window_process: { equals: "EXCEL" }
-        window_class: { not_regex: "XLMAIN" }
-      - window_process: { equals: "WINWORD" }
-        window_class: { not_regex: "OpusApp" }
-      - window_process: { equals: "POWERPNT" }
-        window_class: { not_regex: "PPTFrameClass" }
+      - window_process: {equals: "EXCEL"}
+        window_class: {not_regex: "XLMAIN"}
+      - window_process: {equals: "WINWORD"}
+        window_class: {not_regex: "OpusApp"}
+      - window_process: {equals: "POWERPNT"}
+        window_class: {not_regex: "PPTFrameClass"}
       # 火绒安全
-      - window_process: { equals: "HipsLog" }
-      - window_process: { equals: "HipsTray" }
-      - window_process: { equals: "HRHelper" }
-      - window_process: { equals: "HipsMain" }
-      - window_process: { equals: "ARPProtection" }
-      - window_process: { equals: "Autoruns" }
-      - window_process: { equals: "BugReport" }
-      - window_process: { equals: "CrashDump" }
-      - window_process: { equals: "DB5Upgrade" }
-      - window_process: { equals: "DHCPDetection" }
-      - window_process: { equals: "FileShred" }
-      - window_process: { equals: "HipsDaemon" }
-      - window_process: { equals: "HRUpdate" }
-      - window_process: { equals: "leakrepair" }
-      - window_process: { equals: "NetDiag" }
-      - window_process: { equals: "NetFlow" }
-      - window_process: { equals: "PopBlock" }
-      - window_process: { equals: "RightClickMan" }
-      - window_process: { equals: "SecTask" }
-      - window_process: { equals: "sysclean" }
-      - window_process: { equals: "SysDiag" }
-      - window_process: { equals: "TrafficProt" }
-      - window_process: { equals: "wsctrl" }
-      - window_process: { equals: "wsctrlsvc" }
-      - window_process: { equals: "SecAnalysis" }
+      - window_process: {equals: "HipsLog"}
+      - window_process: {equals: "HipsTray"}
+      - window_process: {equals: "HRHelper"}
+      - window_process: {equals: "HipsMain"}
+      - window_process: {equals: "ARPProtection"}
+      - window_process: {equals: "Autoruns"}
+      - window_process: {equals: "BugReport"}
+      - window_process: {equals: "CrashDump"}
+      - window_process: {equals: "DB5Upgrade"}
+      - window_process: {equals: "DHCPDetection"}
+      - window_process: {equals: "FileShred"}
+      - window_process: {equals: "HipsDaemon"}
+      - window_process: {equals: "HRUpdate"}
+      - window_process: {equals: "leakrepair"}
+      - window_process: {equals: "NetDiag"}
+      - window_process: {equals: "NetFlow"}
+      - window_process: {equals: "PopBlock"}
+      - window_process: {equals: "RightClickMan"}
+      - window_process: {equals: "SecTask"}
+      - window_process: {equals: "sysclean"}
+      - window_process: {equals: "SysDiag"}
+      - window_process: {equals: "TrafficProt"}
+      - window_process: {equals: "wsctrl"}
+      - window_process: {equals: "wsctrlsvc"}
+      - window_process: {equals: "SecAnalysis"}
       # 桌面宠物 & 壁纸
-      - window_process: { equals: "Lively" }
-        window_class: { regex: "HwndWrapper" }
-      - window_process: { equals: "BongoCat" }
-      - window_process: { equals: "VPet-Simulator.Windows" }
-      - window_process: { equals: "VPet.Solution" }
-      - window_process: { equals: "DeskPawsRelease" }
+      - window_process: {equals: "Lively"}
+        window_class: {regex: "HwndWrapper"}
+      - window_process: {equals: "BongoCat"}
+      - window_process: {equals: "VPet-Simulator.Windows"}
+      - window_process: {equals: "VPet.Solution"}
+      - window_process: {equals: "DeskPawsRelease"}
       # 工具
-      - window_process: { equals: "Clash for Windows" }
-      - window_process: { equals: "MouseInc" }
-      - window_process: { equals: "PixPin" }
-      - window_process: { equals: "MechvibesPlusPlus" }
-      - window_process: { equals: "PureRef" }
-      - window_process: { equals: "Everything" }
+      - window_process: {equals: "Clash for Windows"}
+      - window_process: {equals: "MouseInc"}
+      - window_process: {equals: "PixPin"}
+      - window_process: {equals: "MechvibesPlusPlus"}
+      - window_process: {equals: "PureRef"}
+      - window_process: {equals: "Everything"}
       # 游戏
-      - window_process: { equals: "Terraria" }
-      - window_process: { equals: "elonaplus_lts" }
-      - window_process: { equals: "饥荒" }
-      - window_process: { equals: "饥荒联机版" }
-      - window_process: { equals: "Plain Craft Launcher 2" }
+      - window_process: {equals: "Terraria"}
+      - window_process: {equals: "elonaplus_lts"}
+      - window_process: {equals: "饥荒"}
+      - window_process: {equals: "饥荒联机版"}
+      - window_process: {equals: "Plain Craft Launcher 2"}
       # 社交
-      - window_process: { equals: "QQ" }
-      - window_process: { equals: "Weixin" }
-      # 其他
-      - window_process: { equals: "createdump" }
-      - window_process: { equals: "YourMom" }
-      - window_process: { equals: "YourWife" }
-      - window_process: { equals: "tile-map-editor-test" }
-      - window_process: { equals: "Jelly" }
-      - window_process: { equals: "jelly_tests" }
-      - window_process: { equals: "main" }
-      - window_process: { equals: "AcrylicAnim" }
-      - window_process: { equals: "WindowFollower" }
+      - window_process: {equals: "QQ"}
+      - window_process: {equals: "Weixin"}
+
 
 # ---- 调整大小模式 ----
 binding_modes:
