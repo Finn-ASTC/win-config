@@ -1,0 +1,85 @@
+[mgr]
+ratio = [1, 4, 3]
+sort_by = "extension"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+linemode = "btime"
+show_hidden = true
+show_symlink = true
+
+[preview]
+wrap = "yes"
+image_filter = "lanczos3"
+
+
+[plugin]
+prepend_preloaders = [
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { mime = "application/subrip", run = "mediainfo" },
+  { mime = "application/postscript", run = "mediainfo" },
+  { url = "*.csv", run = "duckdb", multi = false },
+  { url = "*.tsv", run = "duckdb", multi = false },
+  { url = "*.json", run = "duckdb", multi = false },
+  { url = "*.parquet", run = "duckdb", multi = false },
+  { url = "*.xlsx", run = "duckdb", multi = false },
+]
+prepend_previewers = [
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { mime = "application/subrip", run = "mediainfo" },
+  { mime = "application/postscript", run = "mediainfo" },
+  { url = "*/", run = "folder" },
+  { url = "*.csv", run = "duckdb" },
+  { url = "*.tsv", run = "duckdb" },
+  { url = "*.json", run = "duckdb" },
+  { url = "*.parquet", run = "duckdb" },
+  { url = "*.xlsx", run = "duckdb" },
+  { url = "*.db", run = "duckdb" },
+  { url = "*.duckdb", run = "duckdb" },
+  { url = "*.docx", run = "docx" },
+]
+[opener]
+edit = [
+	{ run = 'wezterm start -- nvim "%s1"', desc = "Neovim (new window)", for = "windows", orphan = true },
+	{ run = 'nvim %s', desc = "Neovim (terminal)", for = "windows", block = true },
+	{ run = 'code %s', desc = "VS Code", for = "windows", orphan = true },
+	{ run = 'notepad %s', desc = "Notepad", for = "windows", block = true },
+]
+open = [
+	{ run = 'explorer "%s1"', desc = "System default", for = "windows", orphan = true },
+]
+reveal = [
+	{ run = 'explorer /select,"%s1"', desc = "Reveal in Explorer", for = "windows", orphan = true },
+]
+run-as-admin = [
+	{ run = 'cmd /c start "" /min powershell -WindowStyle Hidden -File "C:\Users\Finn\AppData\Roaming\yazi\config\scripts\runas.ps1" "%s1"', desc = "Run as admin", for = "windows", orphan = true },
+]
+edit-as-admin = [
+	{ run = "powershell -WindowStyle Hidden -Command \"Start-Process 'code' -ArgumentList '%s' -Verb runAs\"", desc = "Edit as admin (VS Code)", for = "windows", orphan = true },
+]
+
+[open]
+rules = [
+	{ url = "*/", use = [ "edit", "open", "reveal" ] },
+	{ mime = "text/*", use = [ "edit", "edit-as-admin", "reveal" ] },
+	{ mime = "application/json", use = [ "edit", "reveal" ] },
+	{ mime = "application/xml", use = [ "edit", "reveal" ] },
+	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "video/*", use = [ "open", "reveal" ] },
+	{ mime = "audio/*", use = [ "open", "reveal" ] },
+	{ mime = "application/pdf", use = [ "open", "reveal" ] },
+	{ mime = "application/zip", use = [ "open", "reveal" ] },
+	{ mime = "application/x-7z-compressed", use = [ "open", "reveal" ] },
+	{ mime = "application/x-rar", use = [ "open", "reveal" ] },
+	{ mime = "application/x-tar", use = [ "open", "reveal" ] },
+	{ mime = "application/gzip", use = [ "open", "reveal" ] },
+	{ url = "**/*.exe", use = [ "open", "run-as-admin", "reveal" ] },
+	{ url = "**/*.msi", use = [ "open", "run-as-admin", "reveal" ] },
+	{ url = "**/*.bat", use = [ "edit", "run-as-admin", "reveal" ] },
+	{ url = "**/*.ps1", use = [ "edit", "run-as-admin", "reveal" ] },
+	{ url = "**/*.reg", use = [ "edit", "open", "reveal" ] },
+	{ url = "*", use = [ "edit", "open", "reveal" ] },
+]
+
+[tasks]
+image_alloc = 1073741824 # = 1024*1024*1024 = 1024MB

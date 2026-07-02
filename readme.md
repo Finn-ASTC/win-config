@@ -17,6 +17,7 @@
 | **fastfetch** | 系统信息展示 | `scoop install fastfetch` |
 | **CAVA** | 音频可视化 (YASB 内嵌) | `scoop install cava` |
 | **Flow Launcher** | 快速启动器 | [flowlauncher.com](https://www.flowlauncher.com) |
+| **Yazi** | 终端文件管理器 | `scoop install yazi` |
 
 ## 字体
 
@@ -70,6 +71,9 @@
 | `cava/config` | `C:\Users\<用户名>\.config\cava\config` |
 | `fastfetch/` | `C:\Users\<用户名>\.config\fastfetch\` |
 | `flowlauncher/Themes/Synthwave Theme.xaml` | `C:\Users\<用户名>\AppData\Roaming\FlowLauncher\Themes\` |
+| `yazi/` | `C:\Users\<用户名>\AppData\Roaming\yazi\config\` |
+
+Yazi 还原后需在 config 目录下运行 `ya pack -i` 安装依赖的插件和主题。
 
 ## 需要手动调整的路径
 
